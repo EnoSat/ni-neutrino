@@ -131,6 +131,8 @@ audio.srs_nmgr Potlačovač šumu
 audio.srs_volume Východzia hlasitosť
 audiomenu.PCMOffset Zníženie hlasitosti PCM
 audiomenu.ac3 AC3 prechod
+audiomenu.ac3_atype0 prepnúť AC3 zvuk na starší typ zvuku
+audiomenu.ac3_atype1 prepnúť AC3 zvuk na predvolený typ zvuku
 audiomenu.analog_mode Analógový režim
 audiomenu.analog_out Analógový výstup
 audiomenu.auto_lang Automatický výber zvukovej stopy
@@ -138,7 +140,6 @@ audiomenu.auto_subs Automatický výber titulkov
 audiomenu.avs avs
 audiomenu.avsync A/V synchronizácia
 audiomenu.avsync_am Hlavný zvuk
-audiomenu.clockrec Vzorkovanie
 audiomenu.dolbydigital Zvuk Dolby Digital
 audiomenu.dts DTS prechod
 audiomenu.hdmi_dd Zvuk DD cez HDMI
@@ -212,6 +213,12 @@ audioplayer.streamripper_start Spustenie rippera
 audioplayer.streamripper_stop Zastavenie rippera
 audioplayer.title_artist Titul, Umelec
 audioplayer_internetradio.name Zvukový prehrávač a Internetové rádio
+auto_update_check_6_hours každých 6 hodín
+auto_update_check_daily denne
+auto_update_check_monthly mesačne
+auto_update_check_off vyp
+auto_update_check_on_start_only len pri štarte
+auto_update_check_weekly týždenne
 blank_screen Stmaviť obrazovku
 bookmarkmanager.delete Zmazať
 bookmarkmanager.name Záložky
@@ -242,6 +249,7 @@ bouquetname.removed Odstránené programy
 bouquetname.uhdtv UHD programy
 bouquetname.webradio WebRadio kanály
 bouquetname.webtv WebTV kanály
+boxmode12_not_activated Režim módu 12 nie je aktivovaný!
 buildinfo.compiled_on Kompilované na:
 buildinfo.compiled_with Verzia kompiléru
 buildinfo.compiler_flags Znaky kompiléru
@@ -268,12 +276,6 @@ camd_item_oscam_hint OSCam - Softcam
 camd_item_oscam_name oscam
 camd_item_osmod_hint OSCam MOD - Softcam a emulátor
 camd_item_osmod_name osmod
-camd_item_cs2gbox_hint cs2gbox - Newcamd premostenie
-camd_item_cs2gbox_name cs2gbox
-camd_item_newcs_hint NewCS - Softcam
-camd_item_newcs_name newcs
-camd_item_osemu_hint OSEmu - Emulátor
-camd_item_osemu_name osemu
 camd_msg_reset CAMd reštart v poriadku
 camd_msg_start CAMd spustený
 camd_msg_stop CAMd zastavený
@@ -286,11 +288,12 @@ channellist.additional_on Zap
 channellist.additional_on_minitv Zap (s MiniTV)
 channellist.current_tp Aktuálny transpondér
 channellist.edit Upraviť
+channellist.enablesdt_off vyp
+channellist.enablesdt_on zap
+channellist.enablesdt_on_extended zap (s PMT)
 channellist.epgtext_align_left doľava
 channellist.epgtext_align_right doprava
 channellist.extended Grafické EPG v zozname
-channellist.extended_colored s farebným ukazateľom
-channellist.extended_simple s jednoduchým ukazateľom
 channellist.favs Obľúbené
 channellist.foot Informácie programu
 channellist.foot_freq Informácie frekvencie
@@ -429,6 +432,8 @@ daemon_item.fcm_desc Zobrazenie FRITZ!Box zoznamu volaní a iného ...
 daemon_item.fcm_name FritzCallMonitor
 daemon_item.inadyn_desc DynDNS klient
 daemon_item.inadyn_name Inadyn
+daemon_item.minidlna_desc Jednoduchý DLNA server
+daemon_item.minidlna_name ReadyMedia (MiniDLNA)
 daemon_item.nfsserver_desc NFS kernel server
 daemon_item.nfsserver_name NFS server
 daemon_item.sambaserver_desc Implementácia Server-Message-Block-Protocol (SMB)
@@ -561,7 +566,8 @@ extra.key_list_start Na začiatok
 extra.key_next43mode Nasledujúci pomer strán
 extra.key_pic_mode Formát obrazu
 extra.key_pic_size Zobrazenie formátu 4:3
-extra.key_pip_close Spustiť / Zastaviť PiP
+extra.key_pip_close Zastaviť / Spustiť PiP
+extra.key_pip_close_avinput Zastaviť / Spustiť PiP (HDMI)
 extra.key_pip_setup Nastavenie PiP
 extra.key_pip_swap Prehodiť PiP/Hlavný obraz
 extra.key_record Tlačidlo nahrávania
@@ -644,15 +650,15 @@ extra.tp_hierarchy_none Žiadna
 extra.tp_mod Modulácia
 extra.tp_mod_128 QAM/128
 extra.tp_mod_16 QAM/16
-extra.tp_mod_16a
+extra.tp_mod_16a 16APSK
 extra.tp_mod_256 QAM/256
 extra.tp_mod_32 QAM/32
-extra.tp_mod_32a
+extra.tp_mod_32a 32APSK
 extra.tp_mod_4 QPSK
 extra.tp_mod_4_nr QAM/4-NR
 extra.tp_mod_64 QAM/64
 extra.tp_mod_8 8PSK
-extra.tp_mod_8a
+extra.tp_mod_8a 8APSK
 extra.tp_mod_auto QAM/AUTO
 extra.tp_pilot Pilot
 extra.tp_pilot_auto Auto (HW)
@@ -728,7 +734,8 @@ filesystem.is.utf8.option.iso8859.1 ISO-8859-1
 filesystem.is.utf8.option.utf8 UTF-8
 flashupdate.actionreadflash načítavanie
 flashupdate.apply_settings Preniesť aktuálne nastavenia do nového image?
-flashupdate.autocheck Automatická kontrola aktualizácií pri zavádzaní
+flashupdate.autocheck Pravidelná kontrola dostupnosti aktualizácií
+flashupdate.autocheck_packages Kontrola aktualizácií balíčkov
 flashupdate.cantopenfile Otvorenie súboru nemožné
 flashupdate.cantopenmtd Otvorenie MTD-zariadenia nemožné
 flashupdate.checkupdate_internet Kontrola aktualizácie cez sieť
@@ -946,6 +953,7 @@ glcd.epg_y_position EPG y-pozícia
 glcd.font Písmo
 glcd.font_autoresize Automatická veľkosť písma
 glcd.head Nastavenie grafického LCD
+glcd.logodir Adresár s logmi kanálov
 glcd.logo_x_position Logo x-pozícia
 glcd.logo_y_position Logo y-pozícia
 glcd.mirror_osd Zobraziť ponuku OSD na grafickom LCD
@@ -1006,6 +1014,9 @@ hdd_format_failed Chyba formátovania disku! Uistite sa, že zariadenie nepouž�
 hdd_format_on_mount_failed Formátovanie zariadenia pri pripojovaní zlyhalo
 hdd_format_warn Naozaj formátovať? Všetky dáta budú stratené!
 hdd_fs Súborový systém
+hdd_label Pomenovanie zariadenia
+hdd_label_hint1 Zadajte pomenovanie zariadenia a stlačte uložiť
+hdd_label_hint2 Iba na "%s" (záznamové médium) sa potrebné priečinky zapíšu do zariadenia
 hdd_info_capacity Kapacita
 hdd_info_firmware Firmvér
 hdd_info_head HDD Informácia
@@ -1067,6 +1078,7 @@ imdb.data_genre Žáner
 imdb.data_metascore Hodnotenie
 imdb.data_plot Príbeh
 imdb.data_production Produkcia
+imdb.data_rating Hodnotenie
 imdb.data_rating_failed Bez hodnotenia
 imdb.data_released Uvedenie
 imdb.data_runtime Trvanie
@@ -1074,8 +1086,8 @@ imdb.data_title Originálny názov
 imdb.data_votes Hlasovania
 imdb.data_website Stránka
 imdb.data_writer Autor scénara
-imdb.info IMDb-Informácia
-imdb.info_save Uložiť obal
+imdb.head IMDb-Informácia
+imdb.read_data IMDb dáta ...
 inetradio.name Internetové rádio
 inetradio_autostart Automatický štart internetového rádia
 infoicons_background Zobraziť pozadie
@@ -1117,11 +1129,8 @@ ipsetup.hint_1 Použi 0...9 alebo klávesy NAHOR/NADOL
 ipsetup.hint_2 OK = uloženie, EXIT = zrušenie
 keybindingmenu.addrecord Pridať časovač nahrávania
 keybindingmenu.addremind Pridať časovač prepnutia
-keybindingmenu.allchannels_on_ok Všetky kanály
-keybindingmenu.bouquetchannels_on_ok Aktuálny buket
 keybindingmenu.bouquetdown Predchádzajúci buket
-keybindingmenu.bouquethandling Obsluha buketu
-keybindingmenu.bouquetlist_on_ok Zoznam buketov
+keybindingmenu.bouquetlist_mode Režim buketu
 keybindingmenu.bouquetup Nasledujúci buket
 keybindingmenu.cancel Zatvorenie zoznamu kanálov
 keybindingmenu.channeldown Nasledujúci kanál
@@ -1179,6 +1188,7 @@ lcd4l_convert Konverzia prehlások
 lcd4l_display_type Typ zobrazovača
 lcd4l_display_type_setup Nastavenie typu displeja
 lcd4l_logodir Priečinok lôg programov
+lcd4l_screenshots Vytvorenie snímku obrazovky
 lcd4l_skin Štýl displeja
 lcd4l_skin_0 Štandardný
 lcd4l_skin_1 Veľký
@@ -1193,8 +1203,8 @@ lcd4l_support_off vyp
 lcd4l_support_on zap
 lcd4l_weather Počasie v pohotovostnom režime
 lcd_info_line Zobrazenie v infolište
-lcd_info_line_channel Názov kanálu
-lcd_info_line_channel_no Číslo kanálu
+lcd_info_line_channelname Názov kanálu
+lcd_info_line_channelnumber Číslo kanálu
 lcd_info_line_clock Hodiny
 lcdcontroler.brightness Jas
 lcdcontroler.brightnessdeepstandby Jas vo vypnutom stave
@@ -1251,6 +1261,8 @@ mainmenu.reboot Reštartovať
 mainmenu.recording Nahrávanie
 mainmenu.recording_start Spustiť
 mainmenu.recording_stop Zastaviť
+mainmenu.avinputmode HDMI vstup (Režim)
+mainmenu.avinputmode_pip HDMI vstup (PiP)
 mainmenu.scripts Skripty
 mainmenu.service Inštalácia / služby
 mainmenu.settings Nastavenia
@@ -1280,6 +1292,10 @@ mbkey.copy_several Kopírovať a rozdeliť film
 mbkey.cover Vytvoriť/odstrániť náhľad filmu
 mbkey.cut Vystrihnúť film
 mbkey.truncate Skrátiť film
+mdb.head Databáza filmov
+mdb.choose Výber databázy filmov
+mdb.save_poster Uložiť plagát
+mdb.save_poster_hint Uložiť plagát s "%s"
 menu.back Späť
 menu.cancel Zrušiť
 menu.hint_a_pic Nastavenie prehrávača hudby, prehliadača obrázkov, WebTV, TS, YouTube
@@ -1318,6 +1334,9 @@ menu.hint_audioplayer_streamripper_dir Prednastavený cieľový adresár Streamr
 menu.hint_audioplayer_title Použije SMS štýl vyhľadávania titulov v zozname prehrávania
 menu.hint_auto_lang Automatické prepnutie zvuku na preferovaný jazyk
 menu.hint_auto_subs Automatické spustenie titulkov pre preferovaný jazyk
+menu.hint_auto_update_check Nastaví intervalový režim pre kontroly aktualizácií.
+menu.hint_avinputmode Použije AV vstup vášho prijímača
+menu.hint_avinputmode_pip Použije AV vstup vášho prijímača v režime PiP
 menu.hint_back Návrat do predchádzajúcej položky.\nStlačením tlačidla MENU okamžite opustíte menu.
 menu.hint_back_brief Návrat do predchádzajúcej ponuky
 menu.hint_backlight Nastavenie podsvietených tlačidiel
@@ -1413,6 +1432,7 @@ menu.hint_hdd_fmt Výber formátu disku
 menu.hint_hdd_format Vytvorenie HDD partície a jej formátovanie
 menu.hint_hdd_format_on_mount_failed Zlyhanie formátovania HDD pri pripájaní
 menu.hint_hdd_info Informácie o disku - kapacita, teplota...
+menu.hint_hdd_label Zadanie pomenovania zariadenia
 menu.hint_hdd_noise Nastavenie Automatic Acoustic Management\nnie je podporované u všetkých zariadení
 menu.hint_hdd_power Aktivovať vnútorné napájanie HDD\npre Coolstream HD1 prijímač.
 menu.hint_hdd_sleep Výber času zastavenia disku pri neaktivite
@@ -1535,6 +1555,7 @@ menu.hint_lcd4l_convert Prevod prehlásky pre vstavané LCD4Linux písmo
 menu.hint_lcd4l_display_type Výber typu externého zobrazovača
 menu.hint_lcd4l_display_type_setup Nastavenia typu externého displeja
 menu.hint_lcd4l_logodir Priečinok pre logá.\nNúdzovo prednastavené na chybnom vstupe.
+menu.hint_lcd4l_screenshots Vytvoriť snímky obrazovky z externého displeja v /tmp/lcd4linux.png
 menu.hint_lcd4l_skin Prepnúť medzi módmi\nPrednastavené, Veľké, SysInfo, d-box2, Užívateľské
 menu.hint_lcd4l_skin_radio Prepnúť mód, ak je aktivovaný Rádiový mód
 menu.hint_lcd4l_support Aktivovať/deaktivovať LCD4Linux\npodporovaný display: Pearl DPF
@@ -1668,6 +1689,7 @@ menu.hint_progressbar_timescale_invert Výber preferovaného farebného prechodu
 menu.hint_progressbar_timescale_red Výber množstva červenej vo farebnosti infobaru
 menu.hint_progressbar_timescale_yellow Výber množstva žltej vo farebnosti infobaru
 menu.hint_protection Ochrana obsahu PIN kódom\nVýchodzí PIN 0000
+menu.hint_quadpip Aktivácia QuadPIP
 menu.hint_radiomode Prepne prijímač do režimu Rádio
 menu.hint_reboot Reštartovanie zariadenia - bez potvrdzovania
 menu.hint_record_already_found_check Kontroly pred nastavením nového časovača nahrávania v prípade, že titulný titul už existuje
@@ -1785,7 +1807,7 @@ menu.hint_scan_usalsall Nastavenie USALS označenia pre všetky satelity
 menu.hint_scan_useusals Použije USALS pre\ntento satelit
 menu.hint_scart_osd_fix Obrazová oprava pre niektoré staršie televízory\nPAL/PAL širokouhlé rozlíšenie
 menu.hint_scrambled_message Zobrazenie správy kódovania, pokiaľ kanál nebol dekódovaný
-menu.hint_screen_setup Konfigurácia okrajov obrazu
+menu.hint_screen Nakonfiguruje obrazovky a okraje obrazovky
 menu.hint_screensaver_delay Nastaví čas (v minútach) po ktorom sa spustí šetrič obrazovky
 menu.hint_screensaver_dir Výber priečinka v ktorom sa spustí šetrič obrazovky
 menu.hint_screensaver_enable_text_info Zobraziť ďalšie textové informácie, ak sú k dispozícii.
@@ -1793,6 +1815,7 @@ menu.hint_screensaver_mode Voľba režimu šetriča obrazovky.
 menu.hint_screensaver_random Povoliť/zakázať náhodnú voľbu obrázku.
 menu.hint_screensaver_setup Konfigurácia volieb šetriča obrazovky pre prehrávač hudby a mód rádia
 menu.hint_screensaver_timeout Výber času pre zmenu obrázkov v šetriči obrazovky
+menu.hint_screensetup Nakonfiguruje okraje obrazovky
 menu.hint_screenshot_count Pokiaľ žiadny GUI na obrazovke, môže byť uložených 1-5\nsériových zosnímaní
 menu.hint_screenshot_cover Zap: Pokiaľ prehráva nahrávky, prepíše jedno\nzachytenie do zobrazenia v Prehrávači filmov
 menu.hint_screenshot_dir Výber priečinka pre uloženie zachyteného obrázku
@@ -1864,6 +1887,7 @@ menu.hint_video_cinch_mode Výber režimu analógového výstupu pre\nkompozitn�
 menu.hint_video_contrast Zmena kontrastu obrazu
 menu.hint_video_dbdr MPEG2 rozšírené filtre
 menu.hint_video_format Pomer TV obrazu
+menu.hint_video_hdmi_colorimetry Výber farebného profilu pre výstup HDMI
 menu.hint_video_mode Obrazový režim HDMI výstupu
 menu.hint_video_modes VF klávesa bude cyklovať medzi zvolenými režimami
 menu.hint_video_modes_auto Povoliť režimy automatického výberu na základe obsahu
@@ -1879,9 +1903,10 @@ menu.hint_volume Konfigurácia volieb okna hlasitosti
 menu.hint_volume_digits Číselné zobrazenie ukazateľa hlasitosti Zap/Vyp
 menu.hint_volume_pos Výber pozície indikátora hlasitosti
 menu.hint_volume_size Výber výšky indikátora hlasitosti
-menu.hint_weather_api_key Zadajte svoj kľúč API OpenWeather. Prázdny vstup deaktivuje podporu počasia
-menu.hint_weather_enabled Povolenie alebo zakázanie podpory počasia (openweathermap.org)
+menu.hint_weather_api_key Zadajte svoj kľúč API Dark Sky. Prázdny vstup deaktivuje podporu počasia
+menu.hint_weather_enabled Povolenie alebo zakázanie podpory počasia (darksky.net)
 menu.hint_weather_location Vyberte svoju lokalitu
+menu.hint_weather_postalcode Vyberte svoju polohu pre počasie podľa PSČ
 menu.hint_webradio_setup Kanály WebRadio tu nakonfigurované budú k dispozícii v štandartných zoznamoch kanálov
 menu.hint_webradio_xml_auto Automatické načítanie všetkých existujúcich súborov WebRadio z %s/ a %s/
 menu.hint_webtv_setup Tu nakonfigurované WebTV kanály budú k dispozícii v štandartnom zozname kanálov
@@ -2359,7 +2384,7 @@ nfs.automount Pripojiť pri spustení
 nfs.dir Priečinok / Zdielanie
 nfs.ip IP servera NFS/CIFS
 nfs.localdir Lokálny priečinok
-nfs.mac MAC adresu
+nfs.mac MAC adresa
 nfs.mac_refresh vyhľadať MAC adresu
 nfs.mount Pripojiť sieťový priečinok
 nfs.mount_options Možnosti pripojenia
@@ -2409,17 +2434,15 @@ opkg.upgrade Aktualizovanie inštalovaných balíčkov
 opkg.warning_3rdparty_packages Balíčky tretích strán môžu poškodiť systém! Ste si istý inštaláciou tohoto balíčku?
 options.always vždy
 options.default Obnoviť predvolené hodnoty
-options.fb FRAMEBUFFER
 options.hint_default Nastaviť späť na predvolené hodnoty.
 options.ntp_off DVB
 options.ntp_on NTP
-options.null nič
 options.off nie
 options.on áno
-options.on.without_messages Bez hlásení
-options.serial SERIAL
 options.start spustiť
 options.stop zastaviť
+osd.preset_screen_a Obraz 1
+osd.preset_screen_b Obraz 2
 parentallock.bouquetmode Predvolené bukety
 parentallock.changepin Zmena PIN kódu
 parentallock.changepin_hint1 Zadanie Vášho nového bezpečnostného PIN kódu!
@@ -2526,6 +2549,11 @@ plugintype.game Hra
 plugintype.lua Lua doplnok
 plugintype.script Skript
 plugintype.tool Nástroj
+quadpip QuadPIP
+quadpip_1 Kanál 1
+quadpip_2 Kanál 2
+quadpip_3 Kanál 3
+quadpip_4 Kanál 4
 rclock.locked Uzamknuté
 rclock.lockmsg Diaľkový ovládač uzamknutý.\n\nPre odblokovanie stlačte [ČERVENÉ] \na [MENU] na Vašom ovládači.
 rclock.title Uzamknutie diaľkového ovládača
@@ -2575,8 +2603,8 @@ recordingmenu.timeshift Časový posun
 recordingmenu.tsdir Priečinok časového posunu
 recordingmenu.vtxt_pid Nahrať teletext
 recordingmenu.zap_on_announce Prepnúť na kanál pred začatím nahrávania
-recording_type.file Disk (súbor)
-recording_type.off vypnuté
+recording_type.file Priamo (Súbor)
+recording_type.off vyp
 recordtimer.announce Začatie nahrávania za pár minút.
 remotebox_add pridať
 remotebox_channel_na Kanál nedostupný na Vzdialenom boxe
@@ -2704,6 +2732,7 @@ scants.test Test signálu
 scants.transponders Transpondéry:
 scart_osd_fix CRT SCART OSD oprava
 scrambled_channel Kódovaný kanál
+screen.menu Obraz
 screensaver.delay Oneskorenie
 screensaver.dir Priečinok
 screensaver.enable_text_info Textová informácia
@@ -2887,12 +2916,13 @@ timing.infobar_tv Stavový riadok (tv mód)
 timing.menu Ponuka
 timing.numericzap Prepínanie číslami
 timing.off manuálne, bez časovania
+timing.off_auto automaticky, bez časovania
 timing.popup_messages Vyskakovacie správy
 timing.static_messages Interaktívne správy
 timing.volumebar Ukazateľ hlasitosti
 tmdb.api_key Kľúč TMDb API
 tmdb.enabled TMDb podpora
-tmdb.info TMDb-Informácia
+tmdb.head TMDb-Informácia
 tmdb.read_data Vyhľadávanie údajov TMDB...
 tunersetup.cable Káblový (DVB-C)
 tunersetup.hybrid Hybridný (DVB-C/T/T2)
@@ -2972,13 +3002,22 @@ videomenu.hdmi_cec_mode_tuner ako DVB-S/DVB-C prijímač
 videomenu.hdmi_cec_standby Použiť CEC v pohotovostnom režime
 videomenu.hdmi_cec_view_on Použiť CEC pri sledovaní TV
 videomenu.hdmi_cec_volume Použiť CEC ovládanie hlasitosti
+videomenu.hdmi_cec_vol_audiosystem Zvuková aparatúra
+videomenu.hdmi_cec_vol_off vyp
+videomenu.hdmi_cec_vol_tv TV
+videomenu.hdmi_colorimetry Profil farby
+videomenu.hdmi_colorimetry_auto automaticky
+videomenu.hdmi_colorimetry_bt2020ncl BT 2020 NCL
+videomenu.hdmi_colorimetry_bt2020cl BT 2020 CL
+videomenu.hdmi_colorimetry_bt709 BT 709
+videomenu.hdmi_colorimetry_bt470 BT 470
 videomenu.hue Odtieň
 videomenu.letterbox Letterbox
 videomenu.panscan Pan&Scan
 videomenu.panscan2 14:9 Pan&Scan
 videomenu.pip Nastavenie PiP
 videomenu.pip_error Chyba spustenia PiP
-videomenu.psi Fareba posúvačov
+videomenu.psi Farba posúvačov
 videomenu.psi.brightness Jas
 videomenu.psi.contrast Kontrast
 videomenu.psi.reset Prednastavené
@@ -2991,18 +3030,34 @@ videomenu.screensetup Nastavenie zobrazenia OSD
 videomenu.sdosd SD OSD
 videomenu.sharpness Ostrosť
 videomenu.tv-scart TV SCART
-videomenu.vcrsignal Typ signálu VCR výstupu
 videomenu.videoformat Formát obrazu
 videomenu.videoformat_149 14:9
 videomenu.videoformat_169 16:9
 videomenu.videoformat_43 4:3
 videomenu.videomode Obrazový režim
 videomenu.zappingmode Režim prepínania
-videomenu.zappingmode_mute Čierna obraz
+videomenu.zappingmode_mute Čierny obraz
 videomenu.zappingmode_hold Statický obraz
-weather.api_key Počasie API kľúč (OpenWeather)
+weather.api_key Počasie API kľúč (Dark Sky)
+weather.direction_e V
+weather.direction_ene VSV
+weather.direction_ese VJV
+weather.direction_n S
+weather.direction_ne SV
+weather.direction_nne SSV
+weather.direction_nnw SSZ
+weather.direction_nw SZ
+weather.direction_s J
+weather.direction_se JV
+weather.direction_sse JJV
+weather.direction_ssw JJZ
+weather.direction_sw JZ
+weather.direction_w Z
+weather.direction_wnw ZSZ
+weather.direction_wsw ZJZ
 weather.enabled Počasie podpora
 weather.location Lokalita
+weather.postalcode Poloha počasia podľa PSČ
 webchannels.xml.add Pridať
 webchannels.xml.del Odstrániť
 webchannels.xml.enter Zadať
@@ -3016,11 +3071,9 @@ webtv.xml.auto Automatické načítanie WebTV súborov
 window_size Veľkosť okna v %
 wizard.initial_settings Najdené základné nastavenia
 wizard.install_settings Chcete inštalovať kanály pre Astru 19.2°E?
-wizard.setup Úvodná inštalácia
-wizard.setup_advanced Rozšírená
-wizard.setup_easy Jednoduchá
-wizard.setup_type Typ inštalácie
-wizard.setup_type_hint Jednoduché nastavenie pre CanalDigitaal/TĂ©lĂ©SAT/TV Vlaanderen alebo jednoduché káblové vyhľadávanie
+wizard.message_check_for_updates Aktualizácia
+wizard.message_check_for_updates_ask_enable Mali by sa aktualizácie v budúcnosti kontrolovať automaticky? Kontrola bude prebiehať automaticky na pozadí pri každom štarte. Kontrolu je možné kedykoľvek spustiť aj manuálne a je možné ju upraviť pomocou nastavení aktualizácie.
+wizard.message_check_for_updates_ask_now Skontrolovať teraz dostupnosť aktualizácií?
 wizard.welcome_head Vitajte v sprievodcovi nastavení
 wizard.welcome_text Neutrino je určený pre set-top boxy a je udržiavaný komunitou Tuxboxu a žije z podpory užívateľov a mnohých dobrovoľných prispievateľov.\nAk potrebujete pomoc alebo máte návrhy, nájdete chyby, neváhajte nás kontaktovať.\nStránky podpory alebo kontakt a / alebo webové adresy nájdete v hlavnom menu v časti 'Informácie'.\nNasledujúce kroky vás prevedú úvodnou inštaláciou zariadenia.\nDôležité: Váš set-top box je možné pohodlne ovládať \nprostredníctvom webového rozhrania pre správu časovača alebo živého televízneho vysielania vo webovom prehliadači.\nNedovoľte, aby bol prístupný pre nedôveryhodné siete!\nChceš pokračovať?
 word.after po
