@@ -285,4 +285,5 @@
 	<location country="DE" city="Zeven" latitude="53.300" longitude="9.280"/>
 	<location country="DE" city="Zirndorf" latitude="49.450" longitude="10.950"/>
 	<location country="DE" city="Zwickau" latitude="50.720" longitude="12.500"/>
+	<location country="SK" city="Banská Bystrica" latitude="48.778" longitude="19.162"/>
 </weather>
